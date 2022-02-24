@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+}
+
+.container {
+  position: relative;
+  height: 500px;
+  width: 380px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.container:hover .image img {
+  transform: scale(1.1);
+}
+
+.container .card-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.card-content .wrapper {
+  position: absolute;
+  width: 100%;
+  padding: 10px 25px;
+  bottom: 0px;
+  background-color: #fff;
+  box-shadow: -1px -1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.wrapper p {
+  font-size: 17px;
+  color: grey;
+}
+
+.wrapper .price {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #456abd;
+}
+
+.wrapper .content {
+  margin: 10px 0;
+}
+
+.wrapper .content .name {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content .size-value {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 5px 0;
+}
+
+.content .size-value span {
+  display: block;
+  height: 28px;
+  width: 28px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 28px;
+  color: #456abd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content .size-value span.active {
+  background: #456abd;
+  color: #fff;
+}
