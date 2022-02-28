@@ -1,4 +1,4 @@
-LearningByCoding #27
+LearningByCoding Challenge #27
 
 Play with this customised Product Card here: https://nathlo.github.io/creative-product-card/
 
