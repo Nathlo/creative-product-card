@@ -14,6 +14,7 @@ body {
   width: 100%;
   place-items: center;
   background: #456abd;
+  transition: all 0.3s ease;
 }
 
 .container {
@@ -159,6 +160,13 @@ body {
   border: 2px solid #456abd;
   border-radius: 50%;
   box-sizing: border-box;
+}
+
+.content .colour-value span.white::after {
+  border-color: lightgrey;
+}
+.content .colour-value span.yellow::after {
+  border-color: #eaa523;
 }
 
 .wrapper .btns {
